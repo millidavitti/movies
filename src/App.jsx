@@ -57,9 +57,7 @@ function App() {
           <h1>MyTestApp</h1>
         </div>
       </header>
-      <section className='hero'>
-        <h2>Watch something incredible.</h2>
-      </section>
+      <section className='hero'></section>
       <section className='content'>
         <div className='search'>
           <h2>Search</h2>

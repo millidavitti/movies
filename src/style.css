@@ -15,6 +15,11 @@ header {
   background: #292929;
 }
 
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
 h1 {
   font-size: 1.2rem;
   font-weight: normal;
@@ -44,8 +49,9 @@ h1 {
   display: flex;
   width: 100%;
   height: 327px;
-  background: url(./assets/images/mobile.png) no-repeat;
-  background-position: center;
+  background: url(./assets/images/desk.png) no-repeat;
+  background-position: left center;
+  background-size: cover;
 }
 
 .hero h2 {
@@ -59,8 +65,6 @@ h1 {
 
 .content {
   padding-top: 56px;
-
-  outline: auto;
 }
 
 .search {
@@ -83,12 +87,12 @@ h1 {
 .search input {
   width: 100%;
   height: 100%;
+  border: 1px solid black;
 }
 
 .category {
   margin: 33px 28px;
   overflow-x: scroll;
-  outline: auto;
 }
 
 .category h2 {
@@ -107,11 +111,11 @@ h1 {
   display: flex;
   width: 200px;
   height: 200px;
-  outline: auto;
   border-radius: 12px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.467);
   transition: all 1000ms ease;
 }
 
@@ -148,12 +152,14 @@ h1 {
 
 @media screen and (min-width: 700px) {
   .hero {
-    background: url(./assets/images/tablet.png) no-repeat;
+    background: url(./assets/images/desk.png) no-repeat;
+    background-size: cover;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .hero {
-    background: url(./assets/images/tablet.png) no-repeat;
+    background: url(./assets/images/desk.png) no-repeat;
+    background-size: cover;
   }
 }
