@@ -154,6 +154,6 @@ h1 {
 
 @media screen and (min-width: 1024px) {
   .hero {
-    background: url(./assets/images/desk.png) no-repeat;
+    background: url(./assets/images/tablet.png) no-repeat;
   }
 }
