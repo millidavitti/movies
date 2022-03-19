@@ -145,3 +145,15 @@ h1 {
   backdrop-filter: blur(20px);
   transform: translateY(200px);
 }
+
+@media screen and (min-width: 700px) {
+  .hero {
+    background: url(./assets/images/tablet.png) no-repeat;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    background: url(./assets/images/desk.png) no-repeat;
+  }
+}
