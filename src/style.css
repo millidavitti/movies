@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 67px;
+  padding: 16px 0;
+  background: #292929;
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin: auto;
+  height: fit-content;
+}
+
+.grid {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 13px;
+}
+
+.h1-wrap {
+  display: flex;
+  outline: 1px solid white;
+  width: 108px;
+  height: 34px;
+  margin: auto;
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: white;
+  padding: 7px 9px;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  height: 327px;
+  background: url(./assets/images/mobile.png) no-repeat;
+  background-position: center;
+}
+
+.hero h2 {
+  width: 273px;
+  height: 72px;
+  font-size: 28px;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+.content {
+  padding-top: 56px;
+
+  outline: auto;
+}
+
+.search {
+  display: flex;
+  min-width: 265px;
+  height: 59px;
+  margin: 0 28px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.search h2 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+.search input {
+  width: 100%;
+  height: 100%;
+}
+
+.category {
+  margin: 33px 28px;
+  overflow-x: scroll;
+  outline: auto;
+}
+
+.category h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.movies {
+  margin: 26px 0;
+}
+
+.movie-thumb {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  outline: auto;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 1000ms ease;
+}
+
+.movie-thumb:hover .overlay {
+  opacity: 1;
+  transform: translate(0);
+}
+.movie-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.movie-thumb h2 {
+  margin: auto;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.288);
+  backdrop-filter: blur(20px);
+  transform: translateY(200px);
+}
